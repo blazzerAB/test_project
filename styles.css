@@ -1,0 +1,392 @@
+/* COL */
+
+.colum-1 {
+  width: 10%;
+}
+.colum-2 {
+  width: 20%;
+}
+.colum-3 {
+  width: 30%;
+}
+.colum-4 {
+  width: 40%;
+}
+.colum-5 {
+  width: 50%;
+}
+.colum-6 {
+  width: 60%;
+}
+.colum-7 {
+  width: 70%;
+}
+.colum-8 {
+  width: 80%;
+}
+.colum-9 {
+  width: 90%;
+}
+.colum-10 {
+  width: 100%;
+}
+
+/* ROW */
+.row-1 {
+  height: 10%;
+}
+.row-2 {
+  height: 20%;
+}
+.row-3 {
+  height: 30%;
+}
+.row-4 {
+  height: 40%;
+}
+.row-5 {
+  height: 50%;
+}
+.row-6 {
+  height: 60%;
+}
+.row-7 {
+  height: 70%;
+}
+.row-8 {
+  height: 80%;
+}
+.row-9 {
+  height: 90%;
+}
+.row-10 {
+  height: 100%;
+}
+
+body {
+  padding: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.text-header {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+.text-header:hover {
+  color: #0b76a6;
+}
+
+.text-header-2 {
+  display: block;
+  font-weight: 400;
+  font-size: 0.8em;
+  color: #0b76a6;
+}
+
+.bg-img {
+  min-height: 600px;
+  width: 100%;
+  background-image: url(img/hombre.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo {
+  background-image: url("img/logo_solstice.jpeg");
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.text-main-transparent {
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  font-size: 40px;
+  font-weight: 900;
+  font-family: var(--font-1);
+  letter-spacing: 24px;
+  text-indent: 94px;
+  line-height: 58px;
+  width: max-content;
+}
+
+.text-main-normal {
+  color: white;
+  font-size: 60px;
+  font-weight: 900;
+  font-family: var(--font-1);
+  line-height: 58px;
+  width: max-content;
+}
+
+.text-main-normal:hover {
+  cursor: pointer;
+}
+
+/* .buttom-main {
+  border-radius: 20px 0 20px 0;
+  background-color: rgb(25, 155, 155);
+  font-family: var(--font-2);
+  width: 260px;
+  height: 46px;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 0.5em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  white-space: nowrap;
+  border-style: none;
+  outline: none;
+} */
+
+/* .buttom-main:hover {
+  background-color: rgb(16, 58, 58);
+} */
+
+/* BTN MAIN */
+
+.buttom-main {
+  position: relative;
+  border-style: none;
+  padding: 15px 35px;
+  border-radius: 20px 0 20px 0;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 5px;
+  transition: all 0.2s ease;
+  z-index: 2;
+  overflow: hidden;
+  width: 250px;
+}
+
+.buttom-main::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgb(17, 17, 63);
+  z-index: -2;
+}
+
+.buttom-main::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  left: 0;
+  bottom: -150%;
+  border-radius: 30%;
+  background-color: rgb(25, 155, 155);
+  z-index: -1;
+}
+
+.buttom-main:hover::before {
+  animation: btn-main-a 1.2s linear both;
+}
+
+@keyframes btn-main-a {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    bottom: 100px;
+    transform: rotate(360deg);
+  }
+}
+
+.a-btn-static {
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(24, 24, 90);
+  border-style: none;
+  outline: none;
+  border-radius: 10px 0 10px 0;
+  color: white;
+  z-index: 3;
+}
+
+.a-btn-static:hover {
+  color: cyan;
+  transform: scale(1.1);
+}
+
+.a-btn-shop {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  white-space: nowrap;
+  outline: none;
+  border-style: none;
+  color: white;
+  background: linear-gradient(120deg, rgb(21, 177, 177), rgb(22, 22, 124));
+  font-size: 25px;
+}
+
+.a-bg-cyan {
+  background: radial-gradient(
+    circle,
+    rgb(248, 248, 248) 0%,
+    rgba(211, 254, 255, 1) 100%
+  );
+}
+
+.a-title-category {
+  margin-left: 6rem;
+  color: rgb(21, 177, 177);
+  letter-spacing: 0.3em;
+  transform: translateZ(1);
+}
+
+.a-title-category::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 20px;
+  background: rgba(21, 177, 177, 0.486);
+  top: 1rex;
+  left: -2rem;
+}
+
+.a-title-category::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  top: 1rex;
+  left: 3.5rem;
+  background-image: repeating-linear-gradient(
+    to right,
+    rgba(21, 177, 177, 0.486) 0,
+    rgba(21, 177, 177, 0.486) 11px,
+    transparent 2px,
+    transparent 20px
+  );
+}
+
+.a-title-category-2 {
+  font-weight: bold;
+  margin-left: 50%;
+  color: white;
+  letter-spacing: 0.2em;
+  position: relative;
+}
+
+.a-title-category-2::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 20px;
+  background: rgba(21, 177, 177, 0.486);
+  top: 1rex;
+  left: 92%;
+}
+
+.a-title-category-2::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  top: 1rex;
+  left: 80%;
+  background-image: repeating-linear-gradient(
+    to right,
+    rgba(21, 177, 177, 0.486) 0,
+    rgba(21, 177, 177, 0.486) 11px,
+    transparent 2px,
+    transparent 20px
+  );
+}
+
+.a-caption {
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0.8em;
+  margin-left: 33%;
+}
+
+.cort-card {
+  position: relative;
+}
+
+.a-bg-cyan-2 {
+  background-image: url("img/azul-bg.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.a-img-style {
+  background-image: url("img/musico.jpg");
+  max-width: 80%;
+  min-width: 40%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-shop:hover {
+  transform: perspective(20px) rotateY(0.5deg);
+  box-shadow: -4px 0 10px black;
+  cursor: pointer;
+}
+
+.card-shop:hover .a-btn-shop {
+  color: cyan;
+}
+
+.card-benefits {
+  width: 300px;
+  height: 100%;
+  background: rgb(194, 235, 236);
+  transform: skewX(-10deg);
+  transition: all 0.5s ease;
+  text-align: center;
+}
+
+.card-benefits:hover {
+  transform: skewX(0);
+}
+
+.text-main {
+  color: rgb(25, 155, 155);
+  font-weight: bold;
+}
+
+.container-card-img {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.card-img {
+  height: 550px;
+  width: 50px;
+  z-index: 1;
+  transform: skewX(10deg);
+  transition: all 0.5s ease;
+  opacity: 0.7;
+}
+
+.card-img:hover {
+  transform: skewX(0);
+}
