@@ -1,68 +1,3 @@
-/* COL */
-
-.colum-1 {
-  width: 10%;
-}
-.colum-2 {
-  width: 20%;
-}
-.colum-3 {
-  width: 30%;
-}
-.colum-4 {
-  width: 40%;
-}
-.colum-5 {
-  width: 50%;
-}
-.colum-6 {
-  width: 60%;
-}
-.colum-7 {
-  width: 70%;
-}
-.colum-8 {
-  width: 80%;
-}
-.colum-9 {
-  width: 90%;
-}
-.colum-10 {
-  width: 100%;
-}
-
-/* ROW */
-.row-1 {
-  height: 10%;
-}
-.row-2 {
-  height: 20%;
-}
-.row-3 {
-  height: 30%;
-}
-.row-4 {
-  height: 40%;
-}
-.row-5 {
-  height: 50%;
-}
-.row-6 {
-  height: 60%;
-}
-.row-7 {
-  height: 70%;
-}
-.row-8 {
-  height: 80%;
-}
-.row-9 {
-  height: 90%;
-}
-.row-10 {
-  height: 100%;
-}
-
 body {
   padding: 0;
 }
@@ -73,7 +8,7 @@ a {
   font-weight: bold;
 }
 
-.text-header {
+#text-header {
   color: white;
   font-size: 14px;
   text-decoration: none;
@@ -81,12 +16,12 @@ a {
   margin-left: 20px;
 }
 
-.text-header:hover {
+#text-header:hover {
   color: #0b76a6;
   cursor: pointer;
 }
 
-.text-header-2 {
+#text-header-2 {
   display: block;
   font-weight: 400;
   font-size: 0.8em;
@@ -94,7 +29,7 @@ a {
   margin-left: 20px;
 }
 
-.logo-solstice {
+#logo-solstice {
   background-image: url(img/solstice_logo.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -103,7 +38,7 @@ a {
   width: 50px;
 }
 
-.bg-img {
+#bg-img {
   height: 100vh;
   width: 100%;
   background-image: url(img/hombre.webp);
@@ -111,15 +46,6 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   padding: 15px;
-}
-
-.logo {
-  background-image: url("img/logo_solstice.jpeg");
-  width: 20px;
-  height: 20px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .text-main-transparent {
@@ -147,29 +73,9 @@ a {
   cursor: pointer;
 }
 
-/* .buttom-main {
-  border-radius: 20px 0 20px 0;
-  background-color: rgb(25, 155, 155);
-  font-family: var(--font-2);
-  width: 260px;
-  height: 46px;
-  font-size: 15px;
-  font-weight: 900;
-  letter-spacing: 0.5em;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  white-space: nowrap;
-  border-style: none;
-  outline: none;
-} */
-
-/* .buttom-main:hover {
-  background-color: rgb(16, 58, 58);
-} */
-
 /* BTN MAIN */
 
-.buttom-main {
+#buttom-main {
   position: relative;
   border-style: none;
   padding: 15px 35px;
@@ -183,7 +89,7 @@ a {
   width: 250px;
 }
 
-.buttom-main::after {
+#buttom-main::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -194,7 +100,7 @@ a {
   z-index: -2;
 }
 
-.buttom-main::before {
+#buttom-main::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -206,7 +112,7 @@ a {
   z-index: -1;
 }
 
-.buttom-main:hover::before {
+#buttom-main:hover::before {
   animation: btn-main-a 1.2s linear both;
 }
 
@@ -220,7 +126,7 @@ a {
   }
 }
 
-.a-btn-static {
+#a-btn-static {
   position: fixed;
   height: 40px;
   width: 40px;
@@ -233,7 +139,7 @@ a {
   font-size: 20px;
 }
 
-.a-btn-static:hover {
+#a-btn-static:hover {
   color: cyan;
   transform: scale(1.1);
 }
