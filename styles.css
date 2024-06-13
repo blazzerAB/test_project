@@ -220,6 +220,7 @@ a {
   border-radius: 10px 0 10px 0;
   color: white;
   z-index: 3;
+  font-size: 25px;
 }
 
 .a-btn-static:hover {
