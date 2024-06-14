@@ -8,6 +8,54 @@ a {
   font-weight: bold;
 }
 
+/* HEROS */
+
+#hero-bg-main .container-btn-static {
+  margin-right: 78rem;
+  position: absolute;
+}
+
+#hero-bg-main .center-presentation {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 100px;
+}
+
+#hero-bg-main .card-shop-config {
+  margin-right: 4rem;
+  width: 17rem;
+  height: 25rem;
+  border: none;
+}
+
+#hero-card .card-shop-config {
+  margin-right: 4rem;
+  width: 17rem;
+  height: 25rem;
+  border: none;
+}
+
+#hero-abot-us .parrafo {
+  color: white;
+  margin-top: 50px;
+  margin-left: 85px;
+}
+
+#hero-category .btn-center-card {
+  position: absolute;
+  margin-left: -2rem;
+}
+
+#hero-abot-us .container-main {
+  min-height: 450px;
+  padding: 2rem;
+}
+
+.text-white {
+  color: white;
+}
+
 .text-header {
   color: white;
   font-size: 14px;
